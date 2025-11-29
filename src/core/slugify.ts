@@ -8,10 +8,14 @@ import { transliterate } from "./transliterate";
  * @example slugify("  Multiple   Spaces  ") // "multiple-spaces"
  */
 export function slugify(str: string, separator: string = "-"): string {
-  return transliterate(str)
+  let result = transliterate(str)
     .toLowerCase()
-    // Replace non-alphanumeric characters with separator
-    .replace(/[^a-z0-9]+/g, separator)
-    // Remove separators from edges
-    .replace(new RegExp(`^${separator}+|${separator}+$`, "g"), "");
+    .replace(/[^a-z0-9]+/g, separator);
+
+  if (separator) {
+    const escapedSeparator = separator.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    result = result.replace(new RegExp(`^${escapedSeparator}+|${escapedSeparator}+$`, "g"), "");
+  }
+  
+  return result;
 }

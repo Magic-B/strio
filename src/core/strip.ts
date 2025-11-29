@@ -20,7 +20,7 @@ export function collapseWhitespace(str: string): string {
  * @example stripPrefix("Hello World", "Hello ") // "World"
  */
 export function stripPrefix(str: string, prefix: string): string {
-  if (str.startsWith(prefix)) {
+  if (prefix && str.startsWith(prefix)) {
     return str.slice(prefix.length);
   }
   return str;
@@ -31,7 +31,7 @@ export function stripPrefix(str: string, prefix: string): string {
  * @example stripSuffix("Hello World", " World") // "Hello"
  */
 export function stripSuffix(str: string, suffix: string): string {
-  if (str.endsWith(suffix)) {
+  if (suffix && str.endsWith(suffix)) {
     return str.slice(0, -suffix.length);
   }
   return str;

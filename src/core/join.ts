@@ -12,7 +12,7 @@ export function join(...args: JoinArgs[]): string {
   let separator = ', ';
 
   const filteredArgs = args.reduce<string[]>((acc, arg) => {
-    if (typeof arg === 'object' && arg?.separator) {
+    if (typeof arg === 'object' && arg?.separator !== undefined) {
       separator = arg.separator;
     } else if (typeof arg === 'string' && arg.trim() !== '') {
       acc.push(arg);
