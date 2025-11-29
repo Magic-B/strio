@@ -10,14 +10,24 @@ export {
   isEmail,
   isUrl,
 } from "./core/checks";
+export { contains, containsAll, containsAny } from "./core/contains";
 export { count } from "./core/count";
 export { ensureLeft, ensureRight } from "./core/ensure";
 export { escapeHtml, unescapeHtml, escapeRegExp } from "./core/escape";
+export { humanize, titleCase } from "./core/humanize";
+export { indent, dedent } from "./core/indent";
 export { insert } from "./core/insert";
 export { join } from "./core/join";
 export { mask } from "./core/mask";
+export { ordinalize } from "./core/ordinalize";
 export { template } from "./core/template";
 export { padLeft, padRight, padCenter } from "./core/pad";
+export {
+  random,
+  randomAlphanumeric,
+  randomNumeric,
+  randomAlpha,
+} from "./core/random";
 export { repeat } from "./core/repeat";
 export { reverse } from "./core/reverse";
 export { similarity } from "./core/similarity";

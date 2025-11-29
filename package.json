@@ -1,6 +1,6 @@
 {
   "name": "strio",
-  "version": "0.8.1",
+  "version": "0.9.0",
   "description": "Modern, lightweight & intuitive string utilities for JavaScript and TypeScript. Power your text. Simplify your code.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
