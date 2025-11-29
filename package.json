@@ -1,0 +1,48 @@
+{
+  "name": "strio",
+  "version": "0.1.0",
+  "description": "Modern, lightweight & intuitive string utilities for JavaScript and TypeScript. Power your text. Simplify your code.",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "string",
+    "utilities",
+    "text",
+    "format",
+    "transform",
+    "typescript",
+    "slugify",
+    "capitalize",
+    "truncate",
+    "escape",
+    "camelcase",
+    "kebab-case",
+    "snake_case",
+    "validation",
+    "string-manipulation",
+    "text-processing"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
+  }
+}
