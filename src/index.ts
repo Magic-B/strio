@@ -11,12 +11,16 @@ export {
   isUrl,
 } from "./core/checks";
 export { count } from "./core/count";
+export { ensureLeft, ensureRight } from "./core/ensure";
 export { escapeHtml, unescapeHtml, escapeRegExp } from "./core/escape";
+export { insert } from "./core/insert";
 export { join } from "./core/join";
+export { mask } from "./core/mask";
 export { template } from "./core/template";
 export { padLeft, padRight, padCenter } from "./core/pad";
 export { repeat } from "./core/repeat";
 export { reverse } from "./core/reverse";
+export { similarity } from "./core/similarity";
 export { slugify } from "./core/slugify";
 export {
   stripTags,
