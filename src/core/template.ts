@@ -35,7 +35,6 @@ export function template(strings: TemplateStringsArray, ...values: OptValue[]): 
 
     for (const ch of str) {
       if (isEscaped) {
-        // Previous char was backslash - add current char as literal
         buf += ch;
         isEscaped = false;
         continue;
@@ -57,7 +56,6 @@ export function template(strings: TemplateStringsArray, ...values: OptValue[]): 
       }
     }
 
-    // Handle trailing backslash
     if (isEscaped) {
       buf += "\\";
     }

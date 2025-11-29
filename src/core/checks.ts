@@ -46,24 +46,31 @@ export function isAlphaNumeric(str: string): boolean {
 }
 
 /**
- * Checks if a string is a valid email address
- * @example isEmail("test@example.com") // true
- * @example isEmail("invalid") // false
+ * Checks if a value is a string
+ * @example isString("hello") // true
+ * @example isString(123) // false
+ * @example isString(null) // false
  */
-export function isEmail(str: string): boolean {
-  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(str);
+export function isString(value: any): value is string {
+  return typeof value === "string";
 }
 
 /**
- * Checks if a string is a valid URL
- * @example isUrl("https://example.com") // true
- * @example isUrl("not a url") // false
+ * Checks if a string is in uppercase
+ * @example isUpperCase("HELLO") // true
+ * @example isUpperCase("Hello") // false
+ * @example isUpperCase("hello") // false
  */
-export function isUrl(str: string): boolean {
-  try {
-    new URL(str);
-    return true;
-  } catch {
-    return false;
-  }
+export function isUpperCase(str: string): boolean {
+  return str === str.toUpperCase() && str !== str.toLowerCase();
+}
+
+/**
+ * Checks if a string is in lowercase
+ * @example isLowerCase("hello") // true
+ * @example isLowerCase("Hello") // false
+ * @example isLowerCase("HELLO") // false
+ */
+export function isLowerCase(str: string): boolean {
+  return str === str.toLowerCase() && str !== str.toUpperCase();
 }

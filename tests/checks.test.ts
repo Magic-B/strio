@@ -6,8 +6,9 @@ import {
   isAlpha,
   isNumeric,
   isAlphaNumeric,
-  isEmail,
-  isUrl,
+  isString,
+  isUpperCase,
+  isLowerCase,
 } from "../src/core/checks";
 
 test("isEmpty - checks for empty strings", () => {
@@ -51,21 +52,43 @@ test("isAlphaNumeric - checks for alphanumeric characters", () => {
   assert.strictEqual(isAlphaNumeric(""), false);
 });
 
-test("isEmail - validates email addresses", () => {
-  assert.strictEqual(isEmail("test@example.com"), true);
-  assert.strictEqual(isEmail("user+tag@domain.co.uk"), true);
-  assert.strictEqual(isEmail("invalid"), false);
-  assert.strictEqual(isEmail("@example.com"), false);
-  assert.strictEqual(isEmail("test@"), false);
-  assert.strictEqual(isEmail(""), false);
+test("isString - checks if value is a string", () => {
+  assert.strictEqual(isString("hello"), true);
+  assert.strictEqual(isString(""), true);
+  assert.strictEqual(isString(123), false);
+  assert.strictEqual(isString(null), false);
+  assert.strictEqual(isString(undefined), false);
+  assert.strictEqual(isString({}), false);
+  assert.strictEqual(isString([]), false);
 });
 
-test("isUrl - validates URLs", () => {
-  assert.strictEqual(isUrl("https://example.com"), true);
-  assert.strictEqual(isUrl("http://localhost:3000"), true);
-  assert.strictEqual(isUrl("ftp://server.com"), true);
-  assert.strictEqual(isUrl("not a url"), false);
-  assert.strictEqual(isUrl("example.com"), false);
-  assert.strictEqual(isUrl(""), false);
+test("isUpperCase - checks if string is uppercase", () => {
+  assert.strictEqual(isUpperCase("HELLO"), true);
+  assert.strictEqual(isUpperCase("HELLO WORLD"), true);
+  assert.strictEqual(isUpperCase("HELLO123"), true);
+  assert.strictEqual(isUpperCase("Hello"), false);
+  assert.strictEqual(isUpperCase("hello"), false);
+  assert.strictEqual(isUpperCase("HeLLo"), false);
+});
+
+test("isUpperCase - handles non-letter strings", () => {
+  assert.strictEqual(isUpperCase("123"), false);
+  assert.strictEqual(isUpperCase("!!!"), false);
+  assert.strictEqual(isUpperCase(""), false);
+});
+
+test("isLowerCase - checks if string is lowercase", () => {
+  assert.strictEqual(isLowerCase("hello"), true);
+  assert.strictEqual(isLowerCase("hello world"), true);
+  assert.strictEqual(isLowerCase("hello123"), true);
+  assert.strictEqual(isLowerCase("Hello"), false);
+  assert.strictEqual(isLowerCase("HELLO"), false);
+  assert.strictEqual(isLowerCase("HeLLo"), false);
+});
+
+test("isLowerCase - handles non-letter strings", () => {
+  assert.strictEqual(isLowerCase("123"), false);
+  assert.strictEqual(isLowerCase("!!!"), false);
+  assert.strictEqual(isLowerCase(""), false);
 });
 

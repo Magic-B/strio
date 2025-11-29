@@ -7,8 +7,9 @@ export {
   isAlpha,
   isNumeric,
   isAlphaNumeric,
-  isEmail,
-  isUrl,
+  isString,
+  isUpperCase,
+  isLowerCase,
 } from "./core/checks";
 export { contains, containsAll, containsAny } from "./core/contains";
 export { count } from "./core/count";
@@ -22,13 +23,13 @@ export { mask } from "./core/mask";
 export { ordinalize } from "./core/ordinalize";
 export { template } from "./core/template";
 export { padLeft, padRight, padCenter } from "./core/pad";
+export { pluralize } from "./core/pluralize";
 export {
   random,
   randomAlphanumeric,
   randomNumeric,
   randomAlpha,
 } from "./core/random";
-export { repeat } from "./core/repeat";
 export { reverse } from "./core/reverse";
 export { similarity } from "./core/similarity";
 export { slugify } from "./core/slugify";
