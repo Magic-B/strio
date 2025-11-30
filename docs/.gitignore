@@ -1,0 +1,5 @@
+.temp
+.cache
+.vitepress/cache
+.vitepress/.temp
+dist
