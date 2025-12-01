@@ -22,6 +22,7 @@ export default defineConfig({
   ],
 
   themeConfig: {
+    siteTitle: false,
     logo: {
       light: '/logo-light.svg',
       dark: '/logo-dark.svg'
