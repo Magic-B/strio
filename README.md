@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./docs/public/logo-dark.svg" alt="strio logo" width="320">
+  <img src="./docs/public/logo-readme.svg" alt="strio logo" width="320">
 </p>
 
 <p align="center">
