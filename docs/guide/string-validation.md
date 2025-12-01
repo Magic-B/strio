@@ -433,5 +433,5 @@ function validate(value: string): { valid: boolean; message: string } {
 
 - [String Manipulation](/guide/string-manipulation) - Transform strings
 - [String Formatting](/guide/string-formatting) - Format for display
-- [API Reference](/api/checks) - All validation functions
+- [API Reference](/api/overview) - All validation functions
 

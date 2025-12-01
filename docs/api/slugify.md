@@ -182,11 +182,11 @@ createRoutePath('About Us')
 ## Related Functions
 
 - [transliterate](/api/transliterate) - Only transliterate
-- [dasherize](/api/case) - Convert case to kebab-case
-- [underscore](/api/case) - Convert to snake_case
+ - [dasherize](/api/dasherize) - Convert case to kebab-case
+ - [underscore](/api/underscore) - Convert to snake_case
 
 ## See Also
 
 - [String Formatting Guide](/guide/string-formatting)
-- [Case Conversion](/api/case)
+- [Case Conversion](/api/overview#-case-conversion)
 

@@ -36,7 +36,8 @@ stripTags('<div>Test</div>')
 
 - [escapeHtml](/api/escapeHtml) - Escape HTML characters
 - [collapseWhitespace](/api/collapseWhitespace) - Collapse spaces
-- [strip](/api/strip) - Remove substrings
+- [stripPrefix](/api/stripPrefix) - Remove prefix
+- [stripSuffix](/api/stripSuffix) - Remove suffix
 
 ## See Also
 

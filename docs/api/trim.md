@@ -322,8 +322,8 @@ trim("  hello  ")
 
 ## Related Functions
 
-- [collapseWhitespace](/api/strip) - Collapse multiple spaces
-- [stripPrefix / stripSuffix](/api/strip) - Remove specific prefix/suffix
+- [collapseWhitespace](/api/collapseWhitespace) - Collapse multiple spaces
+- [stripPrefix](/api/stripPrefix) / [stripSuffix](/api/stripSuffix) - Remove specific prefix/suffix
 - [truncate](/api/truncate) - Shorten strings
 - [dedent](/api/indent) - Remove indentation
 
@@ -370,5 +370,5 @@ splitClean("  apple,  banana,  cherry  ", ",")
 
 - [String Manipulation Guide](/guide/string-manipulation)
 - [Validation Functions](/guide/string-validation)
-- [Strip Functions](/api/strip)
+- [Strip Functions](/api/stripTags)
 

@@ -102,7 +102,7 @@ insert(str, 4, "X")  // "abcdX"  (в конце)
 ## Связанные функции
 
 - [replace](/ru/guide/string-manipulation) - Замена подстрок
-- [pad](/ru/api/pad) - Добавление отступов
+- [padLeft](/ru/api/padLeft) / [padRight](/ru/api/padRight) / [padCenter](/ru/api/padCenter) - Добавление отступов
 - [between](/ru/api/between) - Извлечение текста
 
 ## Смотрите также

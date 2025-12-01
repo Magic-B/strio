@@ -184,7 +184,7 @@ insert(str, 4, "X")  // "abcdX"  (at end)
 ## Related Functions
 
 - [replace](/guide/string-manipulation) - Replace substrings
-- [pad](/api/pad) - Add padding to strings
+- [padLeft](/api/padLeft) / [padRight](/api/padRight) / [padCenter](/api/padCenter) - Add padding to strings
 - [between](/api/between) - Extract text between delimiters
 
 ## See Also

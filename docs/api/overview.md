@@ -19,12 +19,15 @@ Transform and modify strings
 ### 🔤 Case Conversion
 Change string casing
 
-- [case](/api/case) - Convert between cases (camel, pascal, kebab, snake)
+- [camelize](/api/camelize) - Convert to camelCase
+- [pascalize](/api/pascalize) - Convert to PascalCase
+- [dasherize](/api/dasherize) - Convert to kebab-case
+- [underscore](/api/underscore) - Convert to snake_case
 
 ### ✅ Validation
 Check and validate strings
 
-- [checks](/api/checks) - Type and format checks (isEmpty, isAlpha, etc.)
+- [String Validation Guide](/guide/string-validation) - Type and format checks (isEmpty, isAlpha, etc.)
 
 ### 🔍 Searching
 Find and extract text
@@ -54,19 +57,19 @@ Helper functions
 ### 📏 Padding & Indentation
 Add spacing
 
-- [pad](/api/pad) - Pad strings
+- [padLeft](/api/padLeft) / [padRight](/api/padRight) / [padCenter](/api/padCenter) - Pad strings
 - [indent](/api/indent) - Add/remove indentation
 
 ### 🔐 Security
 Safe string operations
 
-- [escape](/api/escape) - Escape special characters
-- [strip](/api/strip) - Remove tags and content
+- [escapeHtml](/api/escapeHtml) / [unescapeHtml](/api/unescapeHtml) / [escapeRegExp](/api/escapeRegExp) - Escape special characters
+- [stripTags](/api/stripTags) / [stripPrefix](/api/stripPrefix) / [stripSuffix](/api/stripSuffix) - Remove tags and content
 
 ### ✨ Ensuring
 Guarantee format
 
-- [ensure](/api/ensure) - Ensure prefix/suffix
+- [ensureLeft](/api/ensureLeft) / [ensureRight](/api/ensureRight) - Ensure prefix/suffix
 
 ## Quick Reference
 

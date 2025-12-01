@@ -79,7 +79,7 @@ function sanitize(input: string): string | null {
 
 - [isEmpty](/api/isEmpty) - Check if empty
 - [trim](/api/trim) - Remove whitespace
-- [collapseWhitespace](/api/strip) - Collapse multiple spaces
+- [collapseWhitespace](/api/collapseWhitespace) - Collapse multiple spaces
 
 ## See Also
 

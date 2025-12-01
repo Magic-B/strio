@@ -169,7 +169,7 @@ mask(value, { start: 0, end: 10 })
 ## Связанные функции
 
 - [truncate](/ru/api/truncate) - Укорачивание строк
-- [escapeHtml](/ru/api/escape) - Экранирование HTML
+- [escapeHtml](/ru/api/escapeHtml) - Экранирование HTML
 
 ## Смотрите также
 

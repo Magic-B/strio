@@ -255,7 +255,7 @@ console.log(`Password: ${displayPassword}`)
 
 - [truncate](/api/truncate) - Shorten strings
 - [replace](/guide/string-manipulation) - Replace substrings
-- [escapeHtml](/api/escape) - Escape HTML characters
+- [escapeHtml](/api/escapeHtml) - Escape HTML characters
 
 ## See Also
 

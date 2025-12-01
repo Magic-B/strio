@@ -78,7 +78,7 @@ function sanitize(input: string | null | undefined): string | null {
 
 - [isEmpty](/ru/api/isEmpty) — проверка на пустое значение
 - [trim](/ru/api/trim) — обрезка пробельных символов по краям
-- [collapseWhitespace](/ru/api/strip) — схлопывание повторяющихся пробелов
+- [collapseWhitespace](/ru/api/collapseWhitespace) — схлопывание повторяющихся пробелов
 
 ## Смотрите также
 

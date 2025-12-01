@@ -170,8 +170,8 @@ trim("  первый\n\nвторой  ")
 
 ## Связанные функции
 
-- [collapseWhitespace](/ru/api/strip) - Схлопывание пробелов
-- [stripPrefix / stripSuffix](/ru/api/strip) - Удаление префикса/суффикса
+- [collapseWhitespace](/ru/api/collapseWhitespace) - Схлопывание повторяющихся пробелов
+- [stripPrefix](/ru/api/stripPrefix) / [stripSuffix](/ru/api/stripSuffix) - Удаление префикса/суффикса
 - [truncate](/ru/api/truncate) - Укорачивание строк
 - [dedent](/ru/api/indent) - Удаление отступов
 
