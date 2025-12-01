@@ -227,4 +227,4 @@ function validateName(name: string): boolean {
 
 - [Манипуляции со строками](/ru/guide/string-manipulation) - Преобразование строк
 - [Форматирование строк](/ru/guide/string-formatting) - Форматирование для отображения
-- [Справочник API](/ru/api/checks) - Все функции валидации
+- [Справочник API](/ru/api/overview) - Все функции валидации и другие утилиты
