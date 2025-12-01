@@ -5,7 +5,7 @@ import { ru } from './locales/ru'
 export default defineConfig({
   title: 'strio',
   description: 'Modern string utilities for JavaScript and TypeScript',
-  
+  base: '/strio/',
   lastUpdated: true,
   cleanUrls: true,
 

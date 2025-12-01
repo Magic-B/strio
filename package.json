@@ -27,6 +27,7 @@
   },
   "keywords": [
     "string",
+    "str",
     "utilities",
     "text",
     "format",
@@ -41,7 +42,8 @@
     "snake_case",
     "validation",
     "string-manipulation",
-    "text-processing"
+    "text-processing",
+    "manipulation"
   ],
   "author": "Magic-B (madcodev)",
   "homepage": "https://github.com/magic-b/strio",
